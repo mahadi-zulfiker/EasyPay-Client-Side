@@ -45,7 +45,7 @@ const Registration = () => {
                 <div className="hero-content w-full">
                     <div className="bg-[#7d66ff] w-full max-w-sm">
                         <div className="p-4">
-                            <h1 className="text-5xl font-extrabold text-yellow-400">S Pay</h1>
+                            <h1 className="text-5xl font-extrabold text-yellow-400">Easy Pay</h1>
                             <h1 className="text-4xl font-bold text-yellow-400 mt-7 text-center">Register</h1>
                         </div>
                         <form onSubmit={handleSubmit} className="card-body bg-[#7d66ff] space-y-7">

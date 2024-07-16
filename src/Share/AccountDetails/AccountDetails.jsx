@@ -7,11 +7,11 @@ const AccountDetails = () => {
         <div className="bg-gradient-to-r from-[#472ce6] to-[#563fd8] text-white p-4 lg:p-10">
              <div className="flex justify-around">
             <div className="">
-                <h1 className="font-bold md:text-3xl">Hello, Sayem Hossin</h1>
-                <h1 className="flex  gap-2 items-center font-bold md:text-3xl"><MdOutlineMail /> sayemhossin@gmail.com</h1>
+                <h1 className="font-bold md:text-3xl">Hello, Mahadi Zulfiker</h1>
+                <h1 className="flex  gap-2 items-center font-bold md:text-3xl"><MdOutlineMail /> mahade.adib45@gmail.com</h1>
             </div>
             <div className="">
-                <h1 className="flex gap-3 items-center md:text-3xl"><IoCallOutline /> 02836365000</h1>
+                <h1 className="flex gap-3 items-center md:text-3xl"><IoCallOutline /> 01862183566</h1>
             </div>
             </div>
             <hr  className="mt-5"/>
