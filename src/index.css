@@ -1,8 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body{
-    font-family: "Lato", sans-serif;
+@layer components {
+  .PEBtn {
+    @apply px-3 py-2 rounded-md bg-blue-600 text-white;
+  }
+  .PEBtnOutline {
+    @apply border border-blue-600 px-3 py-2 rounded-md hover:PEBtn text-center;
+  }
+  .PEIcon {
+    @apply w-6 h-6;
+  }
 }
