@@ -11,7 +11,7 @@ const Sidebar = () => {
     return (
         <SidebarContainer
             headingIcon={<SiRazorpay className="text-blue-600 w-6 h-6 mr-3 sm:h-9" />}
-            heading={"PayEasy"}>
+            heading={"Easy Pay"}>
 
             {/* normal user */}
             <>
