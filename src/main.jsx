@@ -1,19 +1,20 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import {
-  RouterProvider,
-} from "react-router-dom";
-import './index.css'
-import { router } from './routers/router';
-import AuthProvider from './provider/AuthProvider';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import { RouterProvider } from "react-router-dom";
+import router from "./Routes/Routes";
+import ContextComponent from "./Context/ContextComponent";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+// Create a client
+const queryClient = new QueryClient();
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <AuthProvider>
-      <ToastContainer />
-      <RouterProvider router={router} />
-    </AuthProvider>
-  </React.StrictMode>,
-)
+    <ContextComponent>
+      <QueryClientProvider client={queryClient}>
+        <RouterProvider router={router}></RouterProvider>
+      </QueryClientProvider>
+    </ContextComponent>
+  </React.StrictMode>
+);
